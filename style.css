@@ -20,7 +20,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-  width: 600px;
+  max-width: 600px;
   overflow: hidden;
 }
 .quiz-heder {
@@ -60,4 +60,25 @@ button:hover {
 button:focus {
   outline: none;
   background-color: #5e3370;
+}
+
+@media (max-widht: 100rem) {
+  .quiz-container {
+    max-width: 62.5rem;
+  }
+}
+@media (max-widht: 75rem) {
+  .quiz-container {
+    max-width: 50rem;
+  }
+}
+@media (max-widht: 50px) {
+  .quiz-container {
+    max-width: 38.5rem;
+  }
+}
+@media (max-widht: 25px) {
+  .quiz-container {
+    max-width: 26rem;
+  }
 }
